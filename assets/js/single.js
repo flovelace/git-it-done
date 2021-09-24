@@ -14,7 +14,7 @@ var getRepoName = function() {
   } else {
     document.location.replace("./index.html");
   }
-  
+
 };
 
 var getRepoIssues = function(repo) {
@@ -35,8 +35,8 @@ var getRepoIssues = function(repo) {
       });
     }
     else {
-      console.log(response);
-      alert("There was a problem with your request!");
+      // if not successful, redirect the user back to the homepage
+      document.location.replace("./index.html");
     }
   });
 };
